@@ -1,0 +1,88 @@
+.hero-content {
+  @include flex(flex-start, space-between);
+  margin: 0 0 2.5rem 6rem;
+
+  .hero-text {
+    margin-top: 2.2rem;
+
+    .ht-heading {
+      width: 15.5rem;
+      @include flex(center, space-between);
+
+      .new {
+        width: 2.75rem;
+        background-color: $very-Dark-Blue;
+        border-radius: 1rem;
+      }
+
+      span,
+      h3 {
+        @include font-stack(1rem, 400);
+        text-transform: uppercase;
+      }
+
+      span {
+        padding: 0.1em 0.6em;
+        color: $white;
+      }
+
+      h3 {
+        color: $grayish-Blue;
+        letter-spacing: 0.2em;
+      }
+    }
+
+    .ht-title {
+      @include font-stack(3.4rem, 700);
+      text-transform: uppercase;
+      color: $very-Dark-Blue;
+      padding: 0.4em 1em 0 0;
+      line-height: 1em;
+    }
+
+    .ht-info {
+      @include font-stack(1.2rem, 400);
+      color: $dark-Grayish-Blue;
+      margin: 1.75em 55% 2.8em 0;
+    }
+
+    .btn {
+      width: 9.5rem;
+      height: 2.5rem;
+      padding: auto;
+      font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .demo-btn {
+      @include font-stack(1rem, 700);
+      color: $white;
+      background-color: $red;
+
+      &:hover {
+        background-color: $red-hover;
+      }
+    }
+
+    .preview-btn {
+      @include font-stack(1rem, 400);
+      letter-spacing: 0.1em;
+      color: $grayish-Blue;
+      background-color: transparent;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .hero-img {
+    width: 80%;
+    margin-right: -15rem;
+    align-self: center;
+  }
+}

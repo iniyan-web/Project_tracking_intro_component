@@ -1,0 +1,30 @@
+header {
+  @include flex(center, space-between);
+  margin: 2.5rem 9.3rem 4rem 6rem;
+
+  .navbar-nav {
+    list-style-type: none;
+    width: 21rem;
+    @include flex(center, space-between);
+
+    .nav-item {
+      @include font-stack(1rem, 700);
+      text-transform: uppercase;
+      color: $very-Dark-Blue;
+
+      &:nth-child(4),
+      &:last-child {
+        color: $grayish-Blue;
+      }
+
+      &:not(:nth-child(4)):hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ham-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+$red: hsl(0, 100%, 68%);
+$red-hover: hsla(0, 100%, 68%, 0.75);
+$white: #fff;
+$very-Dark-Blue: hsl(230, 29%, 20%);
+$dark-Grayish-Blue: hsl(230, 11%, 40%);
+$grayish-Blue: hsl(231, 7%, 65%);
+$light-Grayish-Blue: hsl(207, 33%, 95%);
+$ham-shadow: hsla(231, 7%, 65%, 0.5);
+
+@mixin body-copy {
+  font-size: 18px;
+}
+
+@mixin font-stack($font-size, $font-weight) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+@mixin flex($align-position, $justify-position) {
+  display: flex;
+  align-items: $align-position;
+  justify-content: $justify-position;
+}

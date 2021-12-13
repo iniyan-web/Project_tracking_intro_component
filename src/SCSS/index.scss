@@ -1,0 +1,33 @@
+@import "./reset";
+@import "./configs";
+
+html {
+  @include body-copy;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 52%;
+    height: 60%;
+    background-color: $light-Grayish-Blue;
+    border-bottom-left-radius: 3.5rem;
+  }
+}
+
+@import "./header";
+@import "./heroContent";
+@import "./mediaQuery";
